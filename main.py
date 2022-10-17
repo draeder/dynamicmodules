@@ -4,4 +4,8 @@ imports = ImportModules()
 
 my_classes = imports.imp('apiAdapters')
 
-list(my_classes.values())[0]()  # <-- Executes the first function of the class
+print(my_classes)
+
+for c in my_classes.items():
+    print(c)
+    list(c)[1]()
